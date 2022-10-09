@@ -1,4 +1,4 @@
-import { NearestFilter, TextureLoader } from "three";
+import { NearestFilter, RepeatWrapping, TextureLoader } from "three";
 
 import { dirtImg, grassImg, glassImg, woodImg, logImg } from "./images.js";
 
@@ -14,6 +14,9 @@ grassTexture.magFilter = NearestFilter;
 glassTexture.magFilter = NearestFilter;
 woodTexture.magFilter = NearestFilter;
 logTexture.magFilter = NearestFilter;
+
+groundTexture.wrapS = groundTexture.wrapT = RepeatWrapping;
+
 groundTexture.magFilter = NearestFilter;
 
 
