@@ -7,11 +7,11 @@ export const useKeyboard = () => {
     moveLeft: false,
     moveRight: false,
     jump: false,
-    textture1: false,
-    textture2: false,
-    textture3: false,
-    textture4: false,
-    textture5: false,
+    dirt: false,
+    grass: false,
+    glass: false,
+    wood: false,
+    log: false,
   });
 
   const handleKeyDown = useCallback((e) => {

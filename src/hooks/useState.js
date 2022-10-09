@@ -20,7 +20,9 @@ export const useStore = create((set) => ({
       cubes: prev.cubes.filter((c) => c.pos[0] !== x || c.pos[1] !== y || c.pos[2] !== z),
     }));
   },
-  setTexture: () => {},
+  setTexture: (texture) => {
+    set({ texture });
+  },
   saveWorld: () => {
     console.log("save world");
   },
